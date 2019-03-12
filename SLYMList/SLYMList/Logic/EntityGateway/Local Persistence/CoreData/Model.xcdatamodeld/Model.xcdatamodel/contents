@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F70a" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDCategory" representedClassName="CDCategory" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString="-" syncable="YES"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDCategory" inverseName="subs" inverseEntity="CDCategory" syncable="YES"/>
+        <relationship name="subs" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CDCategory" inverseName="parent" inverseEntity="CDCategory" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDCategory" positionX="-63" positionY="-18" width="128" height="105"/>
+    </elements>
+</model>
